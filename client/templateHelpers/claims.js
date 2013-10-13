@@ -1,3 +1,13 @@
+var getUsersScavenges = function(username) {
+    return Scavenges.find({owner: username}).fetch();
+}
+
+Template.claims.helpers({
+    scavenges: function() {
+        return getUsersScavenges(Meteor.user().username);
+        }
+});
+
 Template.claims.events({
 
     'click .accept' : function() {

@@ -5,13 +5,7 @@ Router.map(function() {
 
     this.route('addScavenge');
 
-    this.route('listScavenges', {
-        path: '/scavenges',
-        controller: 'ScavengesController'
-    });
+    this.route('scavenges');
 
-    this.route('moderateClaims', {
-        path: '/claims',
-        controller: 'ClaimsController'
-    })
+    this.route('claims');
 });

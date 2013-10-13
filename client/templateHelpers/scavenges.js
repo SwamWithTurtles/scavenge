@@ -1,3 +1,13 @@
+var getActiveScavenges = function() {
+    return Scavenges.find({active: 1}).fetch();
+}
+
+Template.scavenges.helpers({
+
+    scavenges: function() {return getActiveScavenges();}
+
+})
+
 Template.scavenges.events({
 
     'click .claim' : function() {
