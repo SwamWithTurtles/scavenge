@@ -81,73 +81,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startup.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/startup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authEvents.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templateEvents/authEvents.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scavengeActionEvents.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templateEvents/scavengeActionEvents.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="3" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addScavengeEvent.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templateEvents/addScavengeEvent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="23" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="leaderboard.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/handlebars/leaderboard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="3" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="claimList.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/handlebars/claimList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="3" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scavengeFormat.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/handlebars/scavengeFormat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="3" selection-start="2006" selection-end="2006" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csr_scavenge.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="csr_scavenge.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csr_scavenge.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="26" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.32310468">
+            <state line="7" column="0" selection-start="67" selection-end="67" vertical-scroll-proportion="-2.1">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="21" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.791667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="claims.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/claims.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="11" selection-start="594" selection-end="594" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leaderboard.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/leaderboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scavenges.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/scavenges.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="11" selection-start="900" selection-end="900" vertical-scroll-proportion="-15.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addScavenge.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/addScavenge.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="36" selection-start="336" selection-end="336" vertical-scroll-proportion="0.33620688">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="static.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/static.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="11" selection-start="206" selection-end="206" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="28" selection-start="414" selection-end="414" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -163,14 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/csr_scavenge.html" />
-        <option value="$PROJECT_DIR$/sass-scavenge/sass/main.scss" />
-        <option value="$PROJECT_DIR$/lib/client/controllers.js" />
-        <option value="$PROJECT_DIR$/lib/client/handlebarTemplates.js" />
-        <option value="$PROJECT_DIR$/lib/client/templateEvents" />
-        <option value="$PROJECT_DIR$/client/templateEvents/addScavengeEvent.js" />
-        <option value="$PROJECT_DIR$/client/templateEvents/scavengeActionEvents.js" />
-        <option value="$PROJECT_DIR$/client/templateEvents.js" />
         <option value="$PROJECT_DIR$/client/templateEvents/authEvents.js" />
         <option value="$PROJECT_DIR$/client/handlebars/scavengeFormat.js" />
         <option value="$PROJECT_DIR$/client/handlebars/claimList.js" />
@@ -179,6 +171,14 @@
         <option value="$PROJECT_DIR$/server/startup.js" />
         <option value="$PROJECT_DIR$/client/routerPaths.js" />
         <option value="$PROJECT_DIR$/csr_scavenge.js" />
+        <option value="$PROJECT_DIR$/templates/navbar.html" />
+        <option value="$PROJECT_DIR$/templates/static.html" />
+        <option value="$PROJECT_DIR$/templates/addScavenge" />
+        <option value="$PROJECT_DIR$/templates/scavenges.html" />
+        <option value="$PROJECT_DIR$/templates/leaderboard.html" />
+        <option value="$PROJECT_DIR$/templates/claims.html" />
+        <option value="$PROJECT_DIR$/csr_scavenge.html" />
+        <option value="$PROJECT_DIR$/templates/layout.html" />
       </list>
     </option>
   </component>
@@ -228,6 +228,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="csr_scavenge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csr_scavenge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csr_scavenge" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,6 +334,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -444,55 +459,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/iron-router/smart.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/iron-router/license.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/md5/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="0" selection-end="275" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/iron-router/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="70" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/iron-router/examples/basic/basic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass-scavenge/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="26" selection-start="2347" selection-end="2347" vertical-scroll-proportion="-13.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templateEvents/addScavengeEvent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="23" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templateEvents/scavengeActionEvents.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="3" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
@@ -542,6 +508,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="414" selection-end="414" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/csr_scavenge.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="36" selection-start="227" selection-end="227" vertical-scroll-proportion="-5.769231">
@@ -549,9 +522,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/static.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="206" selection-end="206" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/scavenges.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="11" selection-start="900" selection-end="900" vertical-scroll-proportion="-15.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/leaderboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/claims.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="594" selection-end="594" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/csr_scavenge.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="26" selection-start="3398" selection-end="3398" vertical-scroll-proportion="0.32310468">
+        <state line="7" column="0" selection-start="67" selection-end="67" vertical-scroll-proportion="-2.1">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="21" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.791667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/addScavenge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="336" selection-end="336" vertical-scroll-proportion="0.33620688">
           <folding />
         </state>
       </provider>

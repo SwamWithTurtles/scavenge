@@ -1,0 +1,9 @@
+<template name="leaderboard">
+    <ol>
+        {{#each sorted results}}
+
+        <li><strong>{{user.username}}</strong>: {{points}}</li>
+
+        {{/each}}
+    </ol>
+</template>

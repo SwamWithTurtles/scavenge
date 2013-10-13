@@ -1,0 +1,26 @@
+<template name="scavenges">
+    <ul>
+        {{#if scavenges.length}}
+        {{#each scavenge-format scavenges}}
+        <li>
+            <div class = "scavenge {{status.class}}">
+                <div class="owner">
+                    <img src="http://www.gravatar.com/avatar/{{hashedEmail}}"><br/>
+                    <span class="text">Owned by <strong>{{owner}}</strong></span>
+                </div>
+
+                <div class="information">
+                    <span class = "description">{{description}}</span><br />
+                        <span class = "points">
+                            <div class = "greenbox">{{points}}</div></br />
+                            {{status.inputText}}
+                        </span>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+        {{else}}
+        There are currently no scavenges
+        {{/if}}
+    </ul>
+</template>

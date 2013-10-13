@@ -1,0 +1,11 @@
+<template name="navbar">
+    <h1>Scavenger Hunt</h1>
+
+    <ul>
+        <li>Hi, {{currentUser.username}}! Why don't you:</li>
+        <li><a href="/scavenges">View existing scavenges</a> |</li>
+        <li><a href="/addScavenge">Add a new scavenge</a> |</li>
+        <li><a href="/claims">Moderate outstanding claims</a> |</li>
+        <li><a href="#" onclick="Meteor.logout()">Logout</a></li>
+    </ul>
+</template>

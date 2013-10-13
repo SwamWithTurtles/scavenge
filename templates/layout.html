@@ -1,0 +1,45 @@
+<template name="authShell">
+    {{#if currentUser}}
+    <div id="navbar">
+        {{yield "navbar"}}
+    </div>
+
+    <div id="main">
+        <div class="content-container">
+            {{yield}}
+        </div>
+    </div>
+
+    <div id="leaderboard">
+
+        <div class="content-container">
+            <h1>Leaderboard</h1>
+            {{yield "leaderboard"}}
+        </div>
+
+    </div>
+
+
+    {{else}}
+    <label for="login"><em>Login:</em></label>
+
+    <form id="login">
+        <label for="username">Username: </label><input id="username"/>
+        <label for="password">Password:</label><input type="password" id="password"/>
+        <input type="submit" id="submitLogin"/>
+
+        <div id="loginError" class="errorMessage"></div>
+    </form>
+
+    <label for="register"><em>Register:</em></label>
+
+    <form id="register">
+        <label for="username">Username: </label><input id="new_username"/>
+        <label for="email">Email: </label><input type="email" id="email"/>
+        <label for="password">Password:</label><input type="password" id="new_password"/>
+        <input type="submit" id="submitRegister"/>
+
+        <div id="registerError" class="errorMessage"></div>
+    </form>
+    {{/if}}
+</template>
