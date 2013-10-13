@@ -1,0 +1,141 @@
+/* CSS declarations go here */
+/* line 4, sass-scavenge/sass/main.scss */
+.scavenge {
+  border: 1px solid black;
+}
+
+/* line 8, sass-scavenge/sass/main.scss */
+.claim {
+  border: 1px solid black;
+}
+
+/* line 12, sass-scavenge/sass/main.scss */
+body {
+  margin: 0px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 80%;
+}
+/* line 17, sass-scavenge/sass/main.scss */
+body .errorMessage {
+  font-weight: bold;
+  color: #a00;
+  color: #e33;
+}
+
+/* line 24, sass-scavenge/sass/main.scss */
+#navbar {
+  border: 1px solid black;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000066), color-stop(100%, #333399));
+  background: -webkit-linear-gradient(top, #000066, #333399);
+  background: -moz-linear-gradient(top, #000066, #333399);
+  background: -o-linear-gradient(top, #000066, #333399);
+  background: linear-gradient(top, #000066, #333399);
+  width: 100%;
+  margin: 0px;
+  padding: 0px 12px;
+  height: 100px;
+}
+/* line 32, sass-scavenge/sass/main.scss */
+#navbar h1 {
+  color: #aaf;
+  font-size: 32px;
+}
+/* line 37, sass-scavenge/sass/main.scss */
+#navbar ul {
+  list-style: none;
+}
+/* line 41, sass-scavenge/sass/main.scss */
+#navbar li {
+  display: inline-block;
+  padding: 0px 2px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #aaf;
+}
+/* line 49, sass-scavenge/sass/main.scss */
+#navbar a, #navbar a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 54, sass-scavenge/sass/main.scss */
+#navbar a:hover {
+  text-decoration: underline;
+  color: #acf;
+}
+
+/* line 62, sass-scavenge/sass/main.scss */
+#main {
+  top: 102px;
+  position: absolute;
+  bottom: 0px;
+  padding: 0;
+  margin: 0 -1px 0 0;
+  background-color: #fff;
+  width: 80%;
+}
+/* line 72, sass-scavenge/sass/main.scss */
+#main ul {
+  list-style: none;
+}
+/* line 76, sass-scavenge/sass/main.scss */
+#main .scavenge {
+  display: block;
+  width: 290px;
+  height: 120px;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+}
+/* line 87, sass-scavenge/sass/main.scss */
+#main .scavenge .owner {
+  width: 100px;
+  float: left;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 93, sass-scavenge/sass/main.scss */
+#main .scavenge .owner .text {
+  padding: 2px;
+}
+/* line 99, sass-scavenge/sass/main.scss */
+#main .scavenge .information {
+  width: 180px;
+  float: right;
+}
+/* line 103, sass-scavenge/sass/main.scss */
+#main .scavenge .information .description {
+  font-size: 125%;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+/* line 109, sass-scavenge/sass/main.scss */
+#main .scavenge .information .points {
+  padding: 2px;
+  float: right;
+}
+/* line 115, sass-scavenge/sass/main.scss */
+#main .scavenge .information .points .greenbox {
+  width: 25px;
+  text-align: center;
+  border: 1px solid #000;
+  background: #6e6;
+  float: right;
+}
+
+/* line 132, sass-scavenge/sass/main.scss */
+#leaderboard {
+  top: 102px;
+  position: absolute;
+  right: 0px;
+  width: 20%;
+  background-color: #ddf;
+  padding: 0;
+  margin: 0;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+}
+
+/* line 145, sass-scavenge/sass/main.scss */
+.content-container {
+  padding: 5px;
+}

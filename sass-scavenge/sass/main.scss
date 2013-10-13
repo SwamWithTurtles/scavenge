@@ -1,0 +1,147 @@
+/* CSS declarations go here */
+@import "compass/css3/images";
+
+.scavenge {
+    border: 1px solid black
+}
+
+.claim {
+    border: 1px solid black
+}
+
+body {
+    margin: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 80%;
+
+    .errorMessage{
+        font-weight: bold;
+        color: #a00;
+        color: #e33;
+    }
+}
+
+#navbar {
+    border: 1px solid black;
+    @include background(linear-gradient(top, #006, #339));
+    width: 100%;
+    margin: 0px;
+    padding: 0px 12px;
+    height: 100px;
+
+    h1 {
+        color: #aaf;
+        font-size: 32px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0px 2px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #aaf;
+    }
+
+    a, a:visited {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #acf;
+    }
+}
+
+
+
+#main {
+
+    top:102px;
+    position: absolute;
+    bottom: 0px;
+    padding: 0;
+    margin: 0 -1px 0 0;
+    background-color: #fff;
+    width: 80%;
+
+    ul {
+        list-style: none;
+    }
+
+    .scavenge {
+
+        display: block;
+        width: 290px;
+        height: 120px;
+
+        padding: 5px;
+        margin: 5px;
+
+        float: left;
+
+        .owner {
+            width: 100px;
+            float: left;
+            text-align: center;
+            padding: 10px 0;
+
+            .text {
+                padding: 2px;
+            }
+
+        }
+
+        .information {
+            width: 180px;
+            float: right;
+
+            .description {
+            font-size: 125%;
+            font-weight: bold;
+            word-wrap:break-word;
+            }
+
+            .points {
+
+
+                padding: 2px;
+                float: right;
+
+             .greenbox {
+                width: 25px;
+                text-align: center;
+                border: 1px solid #000;
+                background: #6e6;
+                float: right;
+             }
+
+            }
+
+        }
+
+    }
+
+
+}
+
+#leaderboard {
+
+    top:102px;
+    position: absolute;
+    right: 0px;
+    width: 20%;
+    background-color: #ddf;
+    padding: 0;
+    margin: 0;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+}
+
+.content-container {
+    padding: 5px;
+}
