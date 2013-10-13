@@ -78,7 +78,7 @@ if (Meteor.isClient) {
                 case -1:
                 return {
                     class: "notClaimed",
-                    inputText: new Handlebars.SafeString("Not Approved... <input type='button' class='claim' data='" + scavenge._id +"' value='Claim Again?'/>")
+                    inputText: new Handlebars.SafeString("<br />Your last claim was rejected. <br/><input type='button' class='claim' data='" + scavenge._id +"' value='Claim Again?'/>")
                 };
 
                 case 0:
