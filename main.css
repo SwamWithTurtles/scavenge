@@ -67,11 +67,27 @@ body .errorMessage {
 #main ul {
   list-style: none;
 }
-/* line 68, sass-scavenge/sass/main.scss */
-#main .claim {
+/* line 71, sass-scavenge/sass/main.scss */
+#main .scavengeClaim div.claim {
+  width: 50%;
+  border: 1px solid black;
+  padding: 3px;
+  margin: 12px;
+}
+/* line 79, sass-scavenge/sass/main.scss */
+#main .scavengeClaim div.claim .accept {
+  background-color: #3a3;
+  color: #fff;
+}
+/* line 84, sass-scavenge/sass/main.scss */
+#main .scavengeClaim div.claim .reject {
+  background-color: #f00;
+}
+/* line 90, sass-scavenge/sass/main.scss */
+#main input {
   border: 1px solid black;
 }
-/* line 72, sass-scavenge/sass/main.scss */
+/* line 96, sass-scavenge/sass/main.scss */
 #main .scavenge {
   display: block;
   width: 290px;
@@ -81,48 +97,48 @@ body .errorMessage {
   margin: 5px;
   float: left;
 }
-/* line 83, sass-scavenge/sass/main.scss */
+/* line 107, sass-scavenge/sass/main.scss */
 #main .scavenge .owner {
   width: 100px;
   float: left;
   text-align: center;
   padding: 10px 0;
 }
-/* line 89, sass-scavenge/sass/main.scss */
+/* line 113, sass-scavenge/sass/main.scss */
 #main .scavenge .owner .text {
   padding: 2px;
 }
-/* line 95, sass-scavenge/sass/main.scss */
+/* line 119, sass-scavenge/sass/main.scss */
 #main .scavenge.inactive {
   background-color: #ddd;
 }
-/* line 99, sass-scavenge/sass/main.scss */
+/* line 123, sass-scavenge/sass/main.scss */
 #main .scavenge.notClaimed {
   background-color: #afa;
 }
-/* line 103, sass-scavenge/sass/main.scss */
+/* line 127, sass-scavenge/sass/main.scss */
 #main .scavenge.yours {
   background-color: #ddd;
   border: 3px solid #000;
   height: 116px;
 }
-/* line 109, sass-scavenge/sass/main.scss */
+/* line 133, sass-scavenge/sass/main.scss */
 #main .scavenge .information {
   width: 180px;
   float: right;
 }
-/* line 113, sass-scavenge/sass/main.scss */
+/* line 137, sass-scavenge/sass/main.scss */
 #main .scavenge .information .description {
   font-size: 125%;
   font-weight: bold;
   word-wrap: break-word;
 }
-/* line 119, sass-scavenge/sass/main.scss */
+/* line 143, sass-scavenge/sass/main.scss */
 #main .scavenge .information .points {
   padding: 2px;
   float: right;
 }
-/* line 125, sass-scavenge/sass/main.scss */
+/* line 149, sass-scavenge/sass/main.scss */
 #main .scavenge .information .points .greenbox {
   width: 25px;
   text-align: center;
@@ -131,7 +147,7 @@ body .errorMessage {
   float: right;
 }
 
-/* line 142, sass-scavenge/sass/main.scss */
+/* line 166, sass-scavenge/sass/main.scss */
 #leaderboard {
   top: 102px;
   position: absolute;
@@ -144,7 +160,7 @@ body .errorMessage {
   border-style: solid;
 }
 
-/* line 155, sass-scavenge/sass/main.scss */
+/* line 179, sass-scavenge/sass/main.scss */
 .content-container {
   padding: 5px;
 }

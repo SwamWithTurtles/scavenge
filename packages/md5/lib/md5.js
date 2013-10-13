@@ -19,6 +19,7 @@ var b64pad  = "";  /* base-64 pad character. "=" for strict RFC compliance   */
  * These are the functions you'll usually want to call
  * They take string arguments and return either hex or base-64 encoded strings
  */
+function hex_md5(s)    { return rstr2hex(rstr_md5(str2rstr_utf8(s))); }
 function b64_md5(s)    { return rstr2b64(rstr_md5(str2rstr_utf8(s))); }
 function any_md5(s, e) { return rstr2any(rstr_md5(str2rstr_utf8(s)), e); }
 function hex_hmac_md5(k, d)
@@ -378,8 +379,6 @@ function bit_rol(num, cnt)
   return (num << cnt) | (num >>> (32 - cnt));
 }
 
-return {
-hex_md5: function(s) { return rstr2hex(rstr_md5(str2rstr_utf8(s))); }
+    return {hex_md5 : hex_md5};
 
-}
 }

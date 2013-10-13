@@ -65,8 +65,32 @@ body {
         list-style: none;
     }
 
-    .claim {
+    .scavengeClaim {
+
+
+        div.claim {
+
+            width: 50%;
+
+            border: 1px solid black;
+            padding: 3px;
+            margin: 12px;
+
+            .accept {
+                background-color: #3a3;
+                color: #fff;
+            }
+
+            .reject {
+                background-color: #f00;
+            }
+        }
+     }
+
+    input {
         border: 1px solid black;
+
+
     }
 
     .scavenge {

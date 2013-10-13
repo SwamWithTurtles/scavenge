@@ -63,54 +63,68 @@ ClaimsController = RouteController.extend({
 
  ///HANDLEBARS HELPERS
 
- Handlebars.registerHelper('scavenge', function() {
-
-    var isYours = Meteor.user().username === this.owner;
-    var owner = isYours ? "you" : this.owner;
-
-    var scavengeId = this._id;
-
-    var status = {};
-    if(!isYours) {
-        var scavenge = Scavenges.findOne(scavengeId);
-        var potentialClaim = _.filter(scavenge.claims, function (claim) {return claim.claimer === Meteor.user().username});
+ Handlebars.registerHelper('scavenge-format', function(scavanges) {
 
 
+    var getStatus = function(scavenge) {
 
-        if(!potentialClaim.length) {
-            status = {class: "notClaimed" ,
-                       inputText: "<input type='button' class='claim' data='"+ this._id +"' value='Claim'/>"}
-        } else {
+        var isYours = (Meteor.user().username === scavenge.owner);
 
-            //There should only be one claim - but just in case there are more take the furthest advanced one
-            var claimStatus = _.max(potentialClaim, function(claim) {return claim.status}).status;
+        var status = {};
 
-            if(claimStatus === 0) {
-                status = { class: "inactive",
-                                    inputText: "Awaiting Moderation"};
-            } else if (claimStatus === -1) {
-                status = { class: "notClaimed",
-                    inputText: "Not Approved... <input type='button' class='claim' data='"+ this._id +"' value='Claim Again?'/>"};
+        if(!isYours) {
+            var potentialClaim = _.filter(scavenge.claims, function (claim) {return claim.claimer === Meteor.user().username});
+
+            if(!potentialClaim.length) {
+                status = {class: "notClaimed" ,
+                   inputText: "<input type='button' class='claim' data='"+ scavenge._id +"' value='Claim'/>"
+               }
             } else {
-                status = { class: "inactive",
-                    inputText: "Already Achieved"};
-            }
 
+                //There should only be one claim - but just in case there are more take the furthest advanced one
+                var claimStatus = _.max(potentialClaim, function(claim) {return claim.status}).status;
+
+                if(claimStatus === 0) {
+                    status = { class: "inactive",
+                                inputText: "Pending"
+
+                             };
+                } else if (claimStatus === -1) {
+                    status = { class: "notClaimed",
+                        inputText: "Not Approved... <input type='button' class='claim' data='" + scavenge._id +"' value='Claim Again?'/>"};
+                } else {
+                    status = { class: "inactive",
+                        inputText: "Already Achieved"};
+                }
+
+            }
+        } else {
+            status = { class: "yours",
+                inputText : "<input type=\"button\" class=\"expireScavenge\" data=\"" + scavenge._id + "\" value=\"Expire this scavenge\">"
+           };
         }
-    } else {
-        status = { class: "yours",
-                    inputText : "<input type='button' class='expireScavenge' data='" + this._id + "' value='Expire this scavenge'>"}
+
+        return {class: status.class, inputText: new Handlebars.SafeString(status.inputText)};
     }
 
-    var fulluser = Meteor.users.findOne({username: this.owner});
+    var formatScavange = function(scavenge) {
 
-    var codeToEscape = "<div class=\"scavenge " + status.class + "\">" +
-                    "<div class=\"owner\"><img src='http://www.gravatar.com/avatar/" + this.hashedEmail + "'/><br />" +
-                    "<span class=\"text\">Owned by <em>" + owner + "</em></span><br />" +
-                    "</div>" +
-                    "<div class=\"information\"><span class=\"description\">" + this.description + "</span><br />" +
-                     "<span class=\"points\"><div class='greenbox'>+" + this.points + "</div><br/>" + status.inputText + "</span></div>"
-    return new Handlebars.SafeString(codeToEscape);
+        var owner = (Meteor.user().username === scavenge.owner) ? "you" : scavenge.owner;
+
+        return {
+            owner: owner,
+            points: scavenge.points,
+            hashedEmail: scavenge.hashedEmail,
+            description: scavenge.description,
+            status: getStatus(scavenge)
+        }
+
+    }
+
+    debugger;
+
+    return _.map(scavanges, formatScavange);
+
   });
 
   Handlebars.registerHelper('scavengeClaim', function() {
@@ -187,6 +201,8 @@ ClaimsController = RouteController.extend({
 
         Meteor.call("updateClaimStatus", scavengeId, claimer, 1);
 
+        window.location.reload();
+
     },
 
     'click .reject' : function() {
@@ -195,6 +211,8 @@ ClaimsController = RouteController.extend({
         var claimer = $(event.srcElement).attr("data");
 
         Meteor.call("updateClaimStatus", scavengeId, claimer, -1);
+
+        window.location.reload();
     }
 
  });
@@ -215,6 +233,9 @@ ClaimsController = RouteController.extend({
         }
 
         Scavenges.update(scavengeId, {$push: {claims: claim}});
+
+        window.location.reload();
+
     },
 
     'click .expireScavenge' : function() {
@@ -307,6 +328,13 @@ function submitScavengeForm() {
 
 }
 
+
+function getActiveScavenges() {
+    return {
+          scavenges: Scavenges.find({active: 1}).fetch()
+    }
+}
+
 function getUsersScavenges(username) {
     var scavenges = Scavenges.find({owner: username});
 
@@ -315,11 +343,6 @@ function getUsersScavenges(username) {
     }
 }
 
-function getActiveScavenges() {
-    return {
-          scavenges: Scavenges.find({active: 1}).fetch()
-    }
-}
 
 function isNumber(number) {
   var intRegex = /^\d+$/;
