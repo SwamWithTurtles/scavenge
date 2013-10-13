@@ -1,14 +1,6 @@
 /* CSS declarations go here */
 @import "compass/css3/images";
 
-.scavenge {
-    border: 1px solid black
-}
-
-.claim {
-    border: 1px solid black
-}
-
 body {
     margin: 0px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -73,12 +65,16 @@ body {
         list-style: none;
     }
 
+    .claim {
+        border: 1px solid black;
+    }
+
     .scavenge {
 
         display: block;
         width: 290px;
         height: 120px;
-
+        border: 1px solid black;
         padding: 5px;
         margin: 5px;
 
@@ -94,6 +90,20 @@ body {
                 padding: 2px;
             }
 
+        }
+
+        &.inactive {
+            background-color: #ddd;
+        }
+
+        &.notClaimed {
+            background-color: #afa;
+        }
+
+        &.yours {
+            background-color: #ddd;
+            border: 3px solid #000;
+            height: 116px;
         }
 
         .information {
