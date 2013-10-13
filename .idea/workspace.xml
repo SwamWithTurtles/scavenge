@@ -63,10 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="csr_scavenge.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="csr_scavenge.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csr_scavenge.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="319" column="4" selection-start="8624" selection-end="8624" vertical-scroll-proportion="0.84070796">
+            <state line="18" column="31" selection-start="394" selection-end="394" vertical-scroll-proportion="-6.3461537">
               <folding />
             </state>
           </provider>
@@ -75,16 +75,16 @@
       <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass-scavenge/sass/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="28" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
+            <state line="127" column="34" selection-start="2038" selection-end="2038" vertical-scroll-proportion="-7.9615383">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="csr_scavenge.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="csr_scavenge.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csr_scavenge.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="47" selection-start="3796" selection-end="3796" vertical-scroll-proportion="-7.36">
+            <state line="127" column="31" selection-start="3422" selection-end="3422" vertical-scroll-proportion="0.51263535">
               <folding />
             </state>
           </provider>
@@ -175,8 +175,8 @@
         <option value="$PROJECT_DIR$/packages.js" />
         <option value="$PROJECT_DIR$/lib/client/controllers.js" />
         <option value="$PROJECT_DIR$/sass-scavenge/sass/main.scss" />
-        <option value="$PROJECT_DIR$/csr_scavenge.html" />
         <option value="$PROJECT_DIR$/csr_scavenge.js" />
+        <option value="$PROJECT_DIR$/csr_scavenge.html" />
       </list>
     </option>
   </component>
@@ -516,13 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass-scavenge/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="28" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/iron-router/package.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="70" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
@@ -537,16 +530,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csr_scavenge.html">
+    <entry file="file://$PROJECT_DIR$/sass-scavenge/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="47" selection-start="3796" selection-end="3796" vertical-scroll-proportion="-7.36">
+        <state line="127" column="34" selection-start="2038" selection-end="2038" vertical-scroll-proportion="-7.9615383">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csr_scavenge.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="319" column="4" selection-start="8624" selection-end="8624" vertical-scroll-proportion="0.84070796">
+        <state line="18" column="31" selection-start="394" selection-end="394" vertical-scroll-proportion="-6.3461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csr_scavenge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="31" selection-start="3422" selection-end="3422" vertical-scroll-proportion="0.51263535">
           <folding />
         </state>
       </provider>

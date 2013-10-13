@@ -118,27 +118,25 @@ body .errorMessage {
 }
 /* line 127, sass-scavenge/sass/main.scss */
 #main .scavenge.yours {
-  background-color: #ddd;
-  border: 3px solid #000;
-  height: 116px;
+  background-color: #ff3;
 }
-/* line 133, sass-scavenge/sass/main.scss */
+/* line 131, sass-scavenge/sass/main.scss */
 #main .scavenge .information {
   width: 180px;
   float: right;
 }
-/* line 137, sass-scavenge/sass/main.scss */
+/* line 135, sass-scavenge/sass/main.scss */
 #main .scavenge .information .description {
   font-size: 125%;
   font-weight: bold;
   word-wrap: break-word;
 }
-/* line 143, sass-scavenge/sass/main.scss */
+/* line 141, sass-scavenge/sass/main.scss */
 #main .scavenge .information .points {
   padding: 2px;
   float: right;
 }
-/* line 149, sass-scavenge/sass/main.scss */
+/* line 147, sass-scavenge/sass/main.scss */
 #main .scavenge .information .points .greenbox {
   width: 25px;
   text-align: center;
@@ -147,7 +145,7 @@ body .errorMessage {
   float: right;
 }
 
-/* line 166, sass-scavenge/sass/main.scss */
+/* line 164, sass-scavenge/sass/main.scss */
 #leaderboard {
   top: 102px;
   position: absolute;
@@ -160,7 +158,7 @@ body .errorMessage {
   border-style: solid;
 }
 
-/* line 179, sass-scavenge/sass/main.scss */
+/* line 177, sass-scavenge/sass/main.scss */
 .content-container {
   padding: 5px;
 }

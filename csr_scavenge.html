@@ -123,9 +123,9 @@
 
 <template name="leaderboard">
     <ol>
-        {{#each sorted points}}
+        {{#each sorted results}}
 
-        <li><em>{{user}}</em>: {{points}}</li>
+        <li><em>{{user.username}}</em>: {{points}}</li>
 
         {{/each}}
     </ol>

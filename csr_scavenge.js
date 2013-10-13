@@ -30,7 +30,7 @@ if (Meteor.isClient) {
         loadingTemplate: 'loading',
 
         renderTemplates: {
-            leaderboard: {to: 'leaderboard', data: getLeaderboardData()},
+            leaderboard: {to: 'leaderboard', data: {results: getLeaderboardData()}},
             navbar: {to: 'navbar'}
         }
     });
@@ -84,13 +84,13 @@ if (Meteor.isClient) {
                 case 0:
                 return {
                     class: "inactive",
-                    inputText: "Pending"
+                    inputText: "Pending! :|"
                 };
 
                 case 1:
                 return {
                     class: "inactive",
-                    inputText: "Already Achieved"
+                    inputText: "Done! :)"
                 };
 
             };
@@ -134,14 +134,8 @@ if (Meteor.isClient) {
         return _.filter(claims, isUnverifiedClaim);
     });
 
-    Handlebars.registerHelper('sorted', function(context, options) {
-        var result = [];
-
-        _.each(context, function(value, key, list){
-            result.push({user:key, points:value});
-        })
-
-        return _.sortBy(result, function(r) {return r.points}).reverse();
+    Handlebars.registerHelper('sorted', function(results) {
+        return _.sortBy(results, function(result) {return result.points}).reverse();
     });
 
 ///TEMPLATE EVENTS
@@ -247,16 +241,14 @@ if (Meteor.isServer) {
 function getLeaderboardData() {
 
     var users = Meteor.users.find().fetch();
-    var scores = {};
 
-    users.forEach(function(user) {
-        scores[user.username] = pointsForUser(user);
+    return _.map(users, function(user) {
+        return {
+            user: user,
+            points: pointsForUser(user)
+        };
     });
-
-    return {
-        points: scores
-    }
-}
+};
 
 function pointsForUser(user) {
     var completedScavenges = Scavenges.find({claims : {$all : [{claimer: user.username, status: 1}]}}).fetch();
